@@ -10,6 +10,7 @@ func TestSolution(t *testing.T) {
 		{"Hello World", 5},
 		{"   fly me   to   the moon  ", 4},
 		{"luffy is still joyboy", 6},
+		{"a", 1},
 	}
 
 	for i, c := range cases {
