@@ -6,7 +6,7 @@ func maxSubArray(nums []int) int {
 	}
 	curSum, maxSum := nums[0], nums[0]
 	for i := 1; i < len(nums); i++ {
-		if nums[i] > curSum {
+		if nums[i] > curSum+nums[i] {
 			curSum = nums[i]
 		} else {
 			curSum += nums[i]
